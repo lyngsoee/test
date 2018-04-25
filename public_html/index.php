@@ -28,7 +28,7 @@ if(isset($_GET['page'])) {
   $page = "home";
 
 }
-
+echo "lol";
 ?>
 
 <!DOCTYPE HTML>
