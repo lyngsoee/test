@@ -1,0 +1,115 @@
+.header {
+  height: 350px;
+  width: 100%;
+  background: url("https://www.praktijkproefamsterdam.nl/application/files/8414/9977/6590/haalbaarheidsonderzoek-slider.jpg");
+  box-shadow: 0 0 15px rgba(0,0,0,0.6);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 2;
+  position: relative;
+}
+.search {
+  height: 200px;
+  margin-top: 100px;
+  background: rgba(255,255,255,0.9)
+}
+.search h1 {
+  font-size: 25px;
+  color: #444;
+  margin: 20px 0;
+}
+.search form input {
+  border-radius: 3px;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  padding: 0 20px;
+  border: 1px solid #ccc;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.search form input.driver {
+  height: 50px;
+}
+.search form input.filter{
+
+}
+.search form input.send {
+  width: 100%;
+  display: block;
+  background: rgba(52, 152, 219,1.0);
+  color: #eee;
+  text-align: center;
+}
+.content {
+  background: url("/img/searchpattern.png");
+  background-attachment: fixed;
+  background-position: center;
+  height: 1500px;
+  width: 100%;
+}
+.content .container.results {
+  padding-top: 50px;
+}
+.content .container.results .result {
+  height: 150px;
+  width: 100%;
+  margin-bottom: 30px;
+  background: rgba(236, 240, 241,1.0);
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+.content .container.results .result .image {
+  height: 150px;
+  padding: 0;
+}
+.content .container.results .result .image .img {
+  position:absolute;
+  top:0;
+  bottom:0;
+  margin:auto 0;
+}
+.headline {
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  font-size: 25px;
+  color: #444;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.sub-text {
+  height: 60px;
+  overflow: hidden;
+  line-height: 20px;
+  font-size: 14px;
+  color: #999;
+  margin: 0;
+}
+.infoImg, .info {
+  height: 27.5px;
+  line-height: 37.5px;
+  color: #999;
+  font-size: 14px;
+  overflow: hidden;
+}
+.infoImg img {
+  height: 15px;
+  opacity: 0.5;
+}
+
+.content .container.results .result:hover .sub-text {
+  color: #666;
+}
+.content .container.results .result:hover .headline {
+  color: #333;
+}
+.content .container.results .result:hover .infoImg img {
+  opacity: 0.6;
+}
+.content .container.results .result:hover .info {
+  color: #666;
+}

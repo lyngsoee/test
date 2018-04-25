@@ -1,0 +1,21 @@
+/*INCLUDE IN HTML
+<link href="https://fonts.googleapis.com/css?family=Lato|Passion+One|Roboto" rel="stylesheet">
+*/
+
+
+/* Fonts */
+body, html {
+
+/*Logo */
+.h1
+  font-family: 'Passion One', cursive;
+
+/* Titles */
+.h2
+  font-family: 'Lato', sans-serif;
+
+/* <p> font */
+.p
+  font-family: 'Roboto', sans-serif;
+}
+<

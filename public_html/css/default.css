@@ -1,0 +1,39 @@
+body, html {
+  font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+  margin: 0;
+}
+.footer {
+  height: 240px;
+  width: 100%;
+  background-image: url("/img/footer-pattern.png");
+}
+.contactInformation {
+  margin-top: 20px;
+  height: 200px;
+  padding: 0;
+}
+.contactInformation .info {
+  height: 40px;
+  line-height: 40px;
+}
+.contactInformation .info img.contactImage {
+  height: 20px;
+  width: 20px;
+  margin: 0px auto;
+  margin-top: 15px;
+  display: block;
+}
+.contactInformation .info p.contactInfo {
+  margin: 0;
+  text-align: left;
+  padding: 0;
+  color: #a3a3a3;
+}
+.contactInformation .info:hover .contactInformation .info p.contactInfo {
+  color: #fff;
+}
+.spacer {
+  border-left: 1px solid #aaa;
+  height: 100px;
+  margin-top: 70px;
+}

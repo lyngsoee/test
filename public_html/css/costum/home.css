@@ -1,0 +1,215 @@
+body {
+  background: black;
+}
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  width: 100%;
+  height: 800px;
+
+}
+.header .logo {
+  width: 100%;
+  height: 800px;
+  position: absolute;
+  z-index: 0;
+  overflow: hidden;
+  background-image: url("https://cn.pling.com/img/d/4/2/8/79779577f314302bbd285e2f858754ea0f04.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.7;
+}
+.search {
+  min-height: 480px;
+  height: auto;
+  margin-top: 100px;
+  background: white;
+  border: 1px solid #999;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  padding: 25px 15px;
+}
+.search form {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.search form h1 {
+  font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: #222;
+}
+.search form p {
+  font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+  font-size: 15px;
+  font-weight: light;
+  color: #444;
+  margin-bottom: 40px;
+}
+.search form input {
+  font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+  padding: 0 10px;
+  height: 35px;
+  border: 1px solid #bdc3c7;
+  border-radius: 3px;
+  outline: none;
+  margin-bottom: 30px;
+  font-size: 14px;
+  overflow: hidden;
+}
+.search form input.driver {
+  width: 100%;
+  height: 40px;
+}
+.search form input.filter {
+  width: 100%;
+}
+.search form input.test {
+  width: 80%;
+  float: left;
+  border-radius: 3px 0 0 3px;
+  border-right: 0;
+}
+.search form .test-icon {
+  border: 1px solid #ccc;
+  border-left: 0;
+  border-radius: 0 3px 3px 0;
+  width: calc(20% - 2px);
+  height: 35px;
+  float: left;
+  text-align: center;
+  color: #777;
+  line-height: 35px;
+  font-size: 12px;
+  overflow: hidden;
+}
+.search form input.send {
+  display: block;
+  width: 100%;
+  background: #3498db;
+  color: #eee;
+  border: 0;
+}
+.search form .searchError {
+  display: block;
+  height: 60px;
+  width: 250px;
+  background: white;
+  position: relative;
+  float:right;
+  top: -475px;
+  right: -300px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.7);
+  border-radius: 3px;
+  text-align: center;
+  line-height: 60px;
+}
+.search form .searchError .triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 16px 10px 0;
+  border-color: transparent rgba(192, 57, 43,0.9) transparent transparent;
+  position: absolute;
+  left: -16px;
+  top: 20px;
+}
+.search form .searchError .triangle1 {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 16px 10px 0;
+  border-color: transparent #fff transparent transparent;
+  position: absolute;
+  left: -16px;
+  top: 20px;
+}
+.search form .searchError p {
+  display: block;
+  background: rgba(192, 57, 43,0.9);
+  font-size: 15px;
+  height: 60px;
+  width: 250px;
+  color: #eee;
+}
+.ad {
+  height: 500px;
+  margin-top: 100px;
+}
+.section {
+  width: 100%;
+  height: 250px;
+  background: white;
+}
+.section .element {
+  height: 160px;
+  margin: 40px 0px;
+  border-right: 1px solid #ccc;
+  background: white;
+}
+.section .element:last-child {
+border: 0;
+}
+.section .element img {
+  max-height: 80px;
+  opacity: 0.5;
+  min-width: 80px;
+  display: block;
+  margin: 0px auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.section .element h1 {
+  font-size: 20px;
+  display: block;
+  width: 100%;
+  color: #333;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+.content {
+  background: #ecf0f1;
+  height: auto;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  background-image: url("https://avante.biz/wp-content/uploads/Free-Download-PC-Wallpapers/Free-Download-PC-Wallpapers-039.jpg");
+  background-image: url("/img/pattern.png");
+  box-shadow: 0 0 20px rgba(0,0,0,0.7);
+  background-attachment: fixed;
+}
+.content .headline {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 20px 0;
+  height: 100px;
+  line-height: 100px;
+}
+.content .headline h1 {
+  font-size: 30px;
+}
+.content .article {
+  padding: 20px 0px;
+}
+.content .article p {
+  width: 100%;
+  line-height: 25px;
+  font-size: 15px;
+  color: #222;
+  overflow: hidden;
+}
+.content .article .col-3 {
+  position: relative;
+}
+.content .article img.image {
+  position:absolute; top:0; right:0; bottom:0; left:0; margin:auto;
+  max-width: 100%;
+  border-radius: 3px;
+  border: 5px solid transparent;
+  box-shadow: 0 0 3px rgba(0,0,0, 0.5);
+}
