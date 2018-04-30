@@ -9,24 +9,30 @@
 
 class Page {
 
+    protected $content; // PageContent
+    protected $title;    // String
 
-    protected $pageString;
-    protected $dir;
-
-    function __construct($page) {
-
-        if (!file_exists("../views/$page/index.php")) {
-            $page = "home";
+    function __construct($_title) {
+        $_title = strtolower($_title);
+        if (!file_exists("../layouts/$_title.json")) {
+            $_title = "home";
         }
+        $this->title = $_title;
 
-        $this->dir = "../views/$page/";
-
-        $this->pageString = $page;
+        $this->content = new PageContent($this->title);
     }
 
-    function load() {
-        echo "loading " .$this->pageString;
-        include_once $this->dir . "index.php";
+    public function Display() {
+        $templateName = $this->content->Layout()->template;
+        include "../templates/$templateName.php";
+    }
+
+    public function Title() {
+        return $this->title;
+    }
+
+    public function Content() {
+        return $this->content;
     }
 
     public function __get($property)
