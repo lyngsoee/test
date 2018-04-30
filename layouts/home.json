@@ -5,8 +5,13 @@
 			"banner"
 		],
 	"mainContent":
-		[
-			"homecontent",
-			"footer"
-		]
+	[
+		"homecontent",
+		"footer"
+	],
+	"lowerContent":
+	[
+		"homecontent",
+		"footer"
+	]
 }
