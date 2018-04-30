@@ -6,7 +6,10 @@
   ],
   "mainContent":
   [
-    "search",
+    "search"
+  ],
+  "lowerContent":
+  [
     "footer"
   ]
 }

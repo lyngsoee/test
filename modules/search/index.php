@@ -6,17 +6,11 @@
  * Time: 07:33
  */
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbName = "tutors";
 
-// Create connection
-$conn = new mysqli($servername, $username, $password,$dbName);
+$database = new Database();
 
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-echo "Connected successfully";
+$n1 = $database->TutorWithID(0);
 
+$n2 = $database->TutorWithID(1);
+
+var_dump(Geocode::Distance($n1->coordinates[0],$n1->coordinates[1],$n2->coordinates[0],$n2->coordinates[1],"K"));

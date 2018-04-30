@@ -45,6 +45,13 @@ $layout = $content->Layout();
         ?>
     </div>
 </div>
+<div class="row">
+    <div class="col-md-12">
+        <?php
+        Modules::Load(($layout->lowerContent));
+        ?>
+    </div>
+</div>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
