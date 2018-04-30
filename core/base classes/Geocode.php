@@ -12,7 +12,6 @@ class Geocode {
         $prepAddr = str_replace(' ','+',$address);
         $geocode=file_get_contents('https://maps.google.com/maps/api/geocode/json?address='.$prepAddr.'&sensor=false$key='."AIzaSyAnuGHbr2czMn7yU3G_eU3a-WlXGKARkug");
         $output= json_decode($geocode);
-        var_dump($output);
         if (!empty($output->results)) {
             $latitude = $output->results[0]->geometry->location->lat;
             $longitude = $output->results[0]->geometry->location->lng;

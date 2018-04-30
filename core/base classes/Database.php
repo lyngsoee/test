@@ -35,7 +35,15 @@ class Database {
         $conn = $this->connection;
 
         $sql = "SELECT * FROM tutors WHERE 1";
-        $result = $conn->query($sql)->fetch_all();
+        $result = $conn->query($sql);
+
+
+        $results = null;
+        $i = 0;
+        while ($data = $result->fetch_assoc()) {
+            $results[$i] = $data;
+            $i++;
+        }
 
         $i = 0;
         $tutors = null;
@@ -47,6 +55,7 @@ class Database {
         return $tutors;
     }
 
+
     public function TutorWithID($id) {
         // Create connection
         $conn = $this->connection;
@@ -57,6 +66,9 @@ class Database {
         return new Tutor($result);
     }
 
+    public function GetConnection() {
+        return $this->connection;
+    }
 
     private function Connection() {
         // Create connection
