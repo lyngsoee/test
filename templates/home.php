@@ -24,7 +24,7 @@ $layout = $content->Layout();
 
     <link rel="stylesheet" type="text/css" href="css/default.css">
 
-    <link rel="stylesheet" type="text/css" href="css/costum/<?php echo $page->Title().".css" ?>">
+    <link rel="stylesheet" type="text/css" href="css/costum/<?php echo $page->Content()->Layout()->template.".css" ?>">
 
     <title>Hello, world!</title>
 </head>

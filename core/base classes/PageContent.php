@@ -10,14 +10,14 @@ class PageContent
 {
 
     protected $layout;
-    protected $pageString;
+    protected $title;
 
-    public function __construct($page)
+    public function __construct($_page)
     {
-        $json = json_decode(file_get_contents("../layouts/$page.json"),true);
+        $json = json_decode(file_get_contents("../layouts/$_page.json"),true);
         $this->layout = new LayoutData($json);
 
-        $this->pageString = $page;
+        $this->title = $_page;
     }
 
     public function Layout() {

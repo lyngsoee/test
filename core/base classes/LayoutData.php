@@ -9,7 +9,7 @@
 
 class LayoutData {
 
-    var $template = "Home";
+    var $template = "home";
     var $jumbotron = ["2","3"];
     var $mainContent = ["1","2"];
 

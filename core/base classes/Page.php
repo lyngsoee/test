@@ -23,7 +23,8 @@ class Page {
     }
 
     public function Display() {
-        include "../templates/$this->title.php";
+        $templateName = $this->content->Layout()->template;
+        include "../templates/$templateName.php";
     }
 
     public function Title() {

@@ -7,9 +7,11 @@
  */
 
 class Modules {
+
     static function Load($array) {
         foreach ($array as $index) {
             include_once "../modules/$index/index.php";
         }
     }
+
 }
