@@ -9,7 +9,7 @@
 
 class Page {
 
-    protected $content; // PageContent
+    protected $content;  // PageContent
     protected $title;    // String
 
     function __construct($_title) {

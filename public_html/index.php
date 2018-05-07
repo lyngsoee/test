@@ -6,6 +6,8 @@
  * Time: 00:18
  */
 
+
+// Base classes
 require_once '../core/base classes/Page.php' ;
 require_once '../core/base classes/PageContent.php' ;
 require_once '../core/base classes/LayoutData.php' ;
@@ -19,8 +21,12 @@ if (isset($_GET["page"]))
 else
     $pageString = "home";
 
+
 $page = new Page($pageString);
+
+
+$database = new Database();
+
 $page->Display();
 
-?>
 

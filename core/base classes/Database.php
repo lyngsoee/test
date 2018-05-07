@@ -66,6 +66,11 @@ class Database {
         return new Tutor($result);
     }
 
+    public function SQL($sql) {
+        $sql = mysqli_real_escape_string($this->connection,$sql);
+        return $this->connection->query($sql);
+    }
+
     public function GetConnection() {
         return $this->connection;
     }
