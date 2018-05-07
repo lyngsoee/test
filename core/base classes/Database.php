@@ -66,7 +66,7 @@ class Database {
         return new Tutor($result);
     }
 
-    public function SQL($sql) {
+    public function Query($sql) {
         $sql = mysqli_real_escape_string($this->connection,$sql);
         return $this->connection->query($sql);
     }

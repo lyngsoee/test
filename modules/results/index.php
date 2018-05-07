@@ -9,4 +9,3 @@
 
 global $database;
 
-var_dump($database->Tutors());

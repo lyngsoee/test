@@ -9,9 +9,9 @@
 
 class LayoutData {
 
-    var $template = "home";
-    var $jumbotron = ["2","3"];
-    var $mainContent = ["1","2"];
+    var $template;
+    var $jumbotron;
+    var $mainContent;
     var $lowerContent;
     function __construct($array)
     {

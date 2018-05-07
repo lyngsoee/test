@@ -14,4 +14,8 @@ class Modules {
         }
     }
 
+    static function LoadSingle($str) {
+        include_once "../modules/$str/index.php";
+    }
+
 }
